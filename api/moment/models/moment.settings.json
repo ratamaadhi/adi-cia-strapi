@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moments",
+  "info": {
+    "name": "Moment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "text",
+      "maxLength": 280
+    },
+    "momentImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
