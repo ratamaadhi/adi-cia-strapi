@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_quotes",
+  "info": {
+    "name": "quotes",
+    "icon": "bookmark"
+  },
+  "options": {},
+  "attributes": {
+    "authorQuote": {
+      "type": "string"
+    },
+    "quoteText": {
+      "type": "richtext"
+    }
+  }
+}

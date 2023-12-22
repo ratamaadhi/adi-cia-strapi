@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wedding",
+      "handler": "wedding.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wedding",
+      "handler": "wedding.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wedding",
+      "handler": "wedding.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "kind": "singleType",
+  "collectionName": "weddings",
+  "info": {
+    "name": "Wedding",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePage": {
+      "type": "string"
+    },
+    "nameCPWanita": {
+      "type": "string",
+      "required": true
+    },
+    "nameCPPria": {
+      "type": "string",
+      "required": true
+    },
+    "akadTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "akadPlaceName": {
+      "type": "string",
+      "required": true
+    },
+    "akadPlaceGmap": {
+      "type": "string",
+      "required": true
+    },
+    "resepsiPlaceName": {
+      "type": "string"
+    },
+    "resepsiPlaceGmap": {
+      "type": "string"
+    },
+    "resepsiTime": {
+      "type": "datetime"
+    },
+    "igCPWanita": {
+      "type": "string"
+    },
+    "igCPPria": {
+      "type": "string"
+    },
+    "daughterOf": {
+      "type": "text",
+      "required": true
+    },
+    "sonOf": {
+      "type": "text",
+      "required": true
+    },
+    "akadPlaceNameDetail": {
+      "type": "text",
+      "required": true
+    },
+    "resepsiPlaceNameDetail": {
+      "type": "text"
+    },
+    "prewedPhoto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "songPage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "urlVideo": {
+      "type": "string"
+    },
+    "isUseUrlVid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Quotes": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.quotes"
+      ]
+    }
+  }
+}

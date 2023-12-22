@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wedding-invited-guests",
+      "handler": "wedding-invited-guests.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wedding-invited-guests/count",
+      "handler": "wedding-invited-guests.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wedding-invited-guests/:slug",
+      "handler": "wedding-invited-guests.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wedding-invited-guests",
+      "handler": "wedding-invited-guests.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wedding-invited-guests/:id",
+      "handler": "wedding-invited-guests.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wedding-invited-guests/:id",
+      "handler": "wedding-invited-guests.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wedding_invited_guests",
+  "info": {
+    "name": "Wedding Invited Guests",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "nameGuest"
+    },
+    "nameGuest": {
+      "type": "string"
+    },
+    "isPresent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "guestFrom": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
