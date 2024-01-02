@@ -138,6 +138,11 @@
       "components": [
         "sections.quotes"
       ]
+    },
+    "seoWedding": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
