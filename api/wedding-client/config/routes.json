@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wedding-clients",
+      "handler": "wedding-client.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wedding-clients/count",
+      "handler": "wedding-client.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wedding-clients/:slug",
+      "handler": "wedding-client.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wedding-clients",
+      "handler": "wedding-client.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wedding-clients/:id",
+      "handler": "wedding-client.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wedding-clients/:id",
+      "handler": "wedding-client.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

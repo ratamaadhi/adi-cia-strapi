@@ -1,0 +1,177 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wedding_clients",
+  "info": {
+    "name": "Wedding Client",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titlePage": {
+      "type": "string"
+    },
+    "nameCPWanita": {
+      "type": "string",
+      "required": true
+    },
+    "nameCPPria": {
+      "type": "string",
+      "required": true
+    },
+    "igCPWanita": {
+      "type": "string"
+    },
+    "igCPPria": {
+      "type": "string"
+    },
+    "daughterOf": {
+      "type": "text",
+      "required": true
+    },
+    "sonOf": {
+      "type": "text",
+      "required": true
+    },
+    "akadTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "akadPlaceName": {
+      "type": "string",
+      "required": true
+    },
+    "akadPlaceGmap": {
+      "type": "string",
+      "required": true
+    },
+    "resepsiTime": {
+      "type": "datetime"
+    },
+    "resepsiPlaceName": {
+      "type": "string"
+    },
+    "resepsiPlaceGmap": {
+      "type": "string"
+    },
+    "akadPlaceNameDetail": {
+      "type": "text",
+      "required": true
+    },
+    "resepsiPlaceNameDetail": {
+      "type": "text"
+    },
+    "fotoCPP": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "fotoCPW": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "songPage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageSection3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "prewedPhoto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "quotes": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.quotes"
+      ]
+    },
+    "seoWedding": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titlePage"
+    },
+    "isUseAccoutNumber": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.bank-account"
+      ]
+    },
+    "isUseAddressGift": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.address-gift"
+      ]
+    },
+    "useAmplopDigitalUntil": {
+      "type": "date"
+    },
+    "nickNameCPPria": {
+      "type": "string",
+      "required": true
+    },
+    "nickNameCPWanita": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

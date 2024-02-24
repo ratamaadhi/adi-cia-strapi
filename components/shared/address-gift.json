@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_address_gifts",
+  "info": {
+    "name": "Address Gift",
+    "icon": "id-card-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "namaAlamat": {
+      "type": "string",
+      "required": true
+    },
+    "alamatDetail": {
+      "type": "text"
+    },
+    "linkGmapAlamat": {
+      "type": "string"
+    },
+    "nomorHpPenerima": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

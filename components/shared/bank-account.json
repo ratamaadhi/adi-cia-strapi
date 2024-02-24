@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_bank_accounts",
+  "info": {
+    "name": "Bank Account",
+    "icon": "file-invoice-dollar"
+  },
+  "options": {},
+  "attributes": {
+    "bankName": {
+      "type": "string",
+      "required": true
+    },
+    "AccountName": {
+      "type": "string",
+      "required": true
+    },
+    "accountNumber": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
